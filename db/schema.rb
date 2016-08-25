@@ -13,12 +13,12 @@
 ActiveRecord::Schema.define(version: 20160825132313) do
 
   create_table "documentations", force: :cascade do |t|
-    t.string   "cpf"
+    t.string   "documentation"
     t.string   "birthday"
     t.string   "external_id"
     t.integer  "status"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end

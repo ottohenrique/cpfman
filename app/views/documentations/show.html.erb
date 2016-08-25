@@ -1,0 +1,11 @@
+<div>
+  <p>CPF: <%= @doc.documentation %></p>
+  <p>Data Nasc: <%= @doc.birthday %></p>
+  <p>External ID: <%= @doc.external_id %></p>
+</div>
+
+<%= form_for @doc do |f| %>
+  <%= select :documentation, :status, Documentation::STATUS %>
+
+  <%= submit_tag %>
+<% end %>

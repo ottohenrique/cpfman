@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <th>CPF</th>
+    <th>Data Nasc</th>
+    <th>External ID</th>
+    <th>Status</th>
+  </thead>
+  <tbody>
+    <% @documentations.each do |doc| %>
+      <tr>
+        <td><%= link_to doc.documentation, [doc] %></td>
+        <td><%= doc.birthday %></td>
+        <td><%= doc.external_id %></td>
+        <td><%= doc.status %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
